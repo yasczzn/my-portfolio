@@ -1,0 +1,20 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    align-items: center;
+}
+.header h2 {
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: rgb(87, 136, 227);
+    margin-top: 20px;
+    font-weight: 500;
+}

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend|Ruda:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Ruda";
+    color: whitesmoke;
+}
+html, body {
+    min-height: 100%;
+}
+body {
+    background: #222222;
+}
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 50vh;  
+}
+a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+/* layout & nav */
+.layout {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px auto;
+}
+nav .links {
+    display: inline-block;
+    text-align: right;
+}
+nav a {
+    display: inline-block;
+    margin-left: 20px;
+    font-weight: 400;
+    padding-bottom: 8px;
+    border-bottom: 3px solid transparent;
+}
+nav a:hover {
+    border-color: white;
+}
+footer p {
+    text-align: center;
+    color: #bbb;
+    margin: 40px auto;
+}

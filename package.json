@@ -8,6 +8,7 @@
     "gatsby"
   ],
   "scripts": {
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
@@ -20,5 +21,8 @@
     "gatsby-transformer-remark": "^6.12.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
   }
 }
